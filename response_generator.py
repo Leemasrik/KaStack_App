@@ -7,7 +7,12 @@ def generate_response(request):
             "reply": "You have an OOPS exam tomorrow. Revise OOP concepts for two hours today.",
             "memory_update": {
                 "personality": [],
-                "events": [],
+                "events": [
+                    {
+                        "event": "OOPS Exam",
+                        "date": "2026-07-08"
+                    }
+                ],
                 "hobbies": []
             }
         }
@@ -17,7 +22,12 @@ def generate_response(request):
             "reply": "Enjoy your movie! Have a great time.",
             "memory_update": {
                 "personality": [],
-                "events": [],
+                "events": [
+                    {
+                        "event": "Movie",
+                        "date": "2026-07-08"
+                    }
+                ],
                 "hobbies": []
             }
         }
@@ -27,7 +37,12 @@ def generate_response(request):
             "reply": "Happy Birthday! Hope you have a wonderful day with your family and friends.",
             "memory_update": {
                 "personality": [],
-                "events": [],
+                "events": [
+                    {
+                        "event": "Birthday",
+                        "date": "2026-07-08"
+                    }
+                ],
                 "hobbies": []
             }
         }
@@ -37,7 +52,12 @@ def generate_response(request):
             "reply": "You have an upcoming meeting. Make sure to review your agenda and join on time.",
             "memory_update": {
                 "personality": [],
-                "events": [],
+                "events": [
+                    {
+                        "event": "Meeting",
+                        "date": "2026-07-08"
+                    }
+                ],
                 "hobbies": []
             }
         }
@@ -46,7 +66,12 @@ def generate_response(request):
         return {
             "reply": "Create a study schedule, focus on one topic at a time, and take short breaks between sessions.",
             "memory_update": {
-                "personality": [],
+                "personality": [
+                    {
+                        "key": "study_time",
+                        "value": "Morning"
+                    }
+                ],
                 "events": [],
                 "hobbies": []
             }
@@ -58,7 +83,11 @@ def generate_response(request):
             "memory_update": {
                 "personality": [],
                 "events": [],
-                "hobbies": []
+                "hobbies": [
+                    {
+                        "name": "Gym"
+                    }
+                ]
             }
         }
 
@@ -67,7 +96,12 @@ def generate_response(request):
             "reply": "Have a safe trip! Don't forget to carry your essentials and check your travel schedule.",
             "memory_update": {
                 "personality": [],
-                "events": [],
+                "events": [
+                    {
+                        "event": "Trip",
+                        "date": "2026-07-08"
+                    }
+                ],
                 "hobbies": []
             }
         }
